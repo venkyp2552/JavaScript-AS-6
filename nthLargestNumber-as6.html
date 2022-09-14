@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NthjLargest Number</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let ary = [20, 30, 90, 40, 60, 10, 67]
+        let srt = ary.sort((a, b) => a - b)
+        let res = srt
+        console.log(res);
+        function arrayFn(res, n) {
+            let opt = res[n - 1]
+            document.write("<h2>The Nth Largest Number from the given array is: " + opt + "</h2>")
+        }
+        arrayFn(res, 4)
+    </script>
+</body>
+
+</html>
